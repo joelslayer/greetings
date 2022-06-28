@@ -1,0 +1,18 @@
+{{>partials/header}}
+
+<section class="fundo">
+    <section class="greetings">
+		<h1 class="hour">00:00</h1>
+		<h2 class="title--1"><span class="period"></span></h2>
+	</section>
+	<section class="message">
+		<div class="phrase">
+        {{#versiculo.list}}
+			<p class="texto--1">{{text}}</p>
+			<p class="texto--1">{{book}} {{chapter}}:{{verse}}</p>
+        {{/versiculo.list}}    
+		</div>
+	</section>
+</section>
+
+{{>partials/footer}}
